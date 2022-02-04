@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><title>My blog!</title>
+    <head>
+    <title>Using KaTeX for mathematical typesetting - you!</title>
+    
+    
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta name="description" content="placeholder description text for your blog!"/>
 
-    <meta property="og:title" content="My blog! -&nbsp;placeholder description text for your blog!" />
+    <meta property="og:title" content="My blog! -&nbsp;Using KaTeX for mathematical typesetting" />
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="&#x2F;"/>
+    <meta property="og:url" content="&#x2F;using-katex&#x2F;"/>
     <meta property="og:description" content="placeholder description text for your blog!"/>
     <link rel="preload" href="/assets/fonts/FiraCode-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/assets/fonts/FiraCode-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -15,7 +18,26 @@
     <link rel="stylesheet" href="/style.css?h=bd274384723fa6dfff6facd579d442d125903559eaf24d02743774ef7fd98902">
     <link rel="stylesheet" href=" /color/orange.css?h=61b8094b690f489d96a9978bc35d3839a6e9f42d0a99edfd478095b22e0ffc20">
     
-<link rel="alternate" type="application/atom+xml" title="My blog! RSS" href="/atom.xml"></head>
+<link rel="alternate" type="application/atom+xml" title="My blog! RSS" href="/atom.xml">
+  
+
+  <link rel="stylesheet" href="/assets/katex/katex.min.css">
+
+  <script defer type="text/javascript" src="/assets/katex/katex.min.js"></script>
+  <script defer type="text/javascript" src="/assets/katex/mathtex-script-type.min.js"></script>
+
+  <script defer src="/assets/katex/auto-render.min.js"
+    onload="renderMathInElement(document.body, {
+				delimiters: [
+					{left: '$$', right: '$$', display: true},
+					{left: '$', right: '$', display: false},
+					{left: '\\(', right: '\\)', display: false},
+					{left: '\\[', right: '\\]', display: true}
+				]
+			});"></script>
+
+
+  </head>
     <body>
         <div class="container">
 <header class="header">
@@ -91,16 +113,12 @@
     </nav>
 
     </header>
-<div class="content">
-<section class="posts"><div class="post on-list">
+<div class="content"><article class="post">
         <header>
             <h1 class="post-title">
                 <a href="&#x2F;using-katex&#x2F;">Using KaTeX for mathematical typesetting</a>
             </h1>
-        </header>
-        
-        
-        
+            
     <div class="post-meta">
         <span class="post-date">2021.06.16
                 </span>
@@ -122,99 +140,50 @@
             
         
     </div>
-<div class="post-content">
-            </div>
-        </div>
-    <div class="post on-list">
-        <header>
-            <h1 class="post-title">
-                <a href="&#x2F;zerm&#x2F;">what is zerm?</a>
-            </h1>
-        </header>
-        
-        
-        
-    <div class="post-meta">
-        <span class="post-date">2019.08.07
-                [Updated: 2021.02.03]
-                </span>
 
-        <span class="post-author"></span>
+        </header><p>The usual way to include LaTeX is to use <code>$$</code>, as shown in the examples below.</p>
+<p>These examples are taken from <a href="http://khan.github.io/KaTeX/">http://khan.github.io/KaTeX/</a></p>
+<h3 id="example-1">Example 1<a class="zola-anchor" href="#example-1" aria-label="Anchor link for: example-1">§</a>
+</h3>
+<p>If the text between <code>$$</code> contains newlines it will rendered in display mode:</p>
+<pre><code>$$
+f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi
+$$
+</code></pre>
+<p>$$
+f(x) = \int_{-\infty}^\infty\hat f(\xi),e^{2 \pi i \xi x},d\xi
+$$</p>
+<h3 id="example-2">Example 2<a class="zola-anchor" href="#example-2" aria-label="Anchor link for: example-2">§</a>
+</h3>
+<pre><code>$$
+\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
+$$
 
-        
+1(ϕ5−ϕ)e25π=1+e−2π1+e−4π1+e−6π1+e−8π1+⋯ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } } 
+</code></pre>
+<p>$$
+\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
+$$</p>
+<p>1(ϕ5−ϕ)e25π=1+e−2π1+e−4π1+e−6π1+e−8π1+⋯ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } } </p>
+<h3 id="example-3">Example 3<a class="zola-anchor" href="#example-3" aria-label="Anchor link for: example-3">§</a>
+</h3>
+<pre><code>$$
+1 +  \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots = \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}, \quad\quad \text{for }\lvert q\rvert&lt;1.
+$$
+</code></pre>
+<p>$$
+1 +  \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots = \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}, \quad\quad \text{for }\lvert q\rvert&lt;1.
+$$</p>
 
-    
-    :: {<a href="/categories/programming/">programming</a>,
-            <a href="/categories/misc/">misc.</a>} 
 
-            
-    ::
-    #<a href="/tags/rust/">rust</a>
-        
-    #<a href="/tags/test/">test</a>
-        
-    #<a href="/tags/zola/">zola</a>
-        
-    
-            
-        
-    </div>
-<div class="post-content">
-            a summary of what zerm is and why it is different.</div>
-        <div>
-            <a class="read-more button" href="&#x2F;zerm&#x2F;">read more →</a>
-        </div>
-        </div>
-    <div class="post on-list">
-        <header>
-            <h1 class="post-title">
-                <a href="&#x2F;demo&#x2F;">demo</a>
-            </h1>
-        </header>
-        
-        
-        
-    <div class="post-meta">
-        <span class="post-date">2019.08.06
-                </span>
-
-        <span class="post-author"></span>
-
-        
-
-    
-    :: {<a href="/categories/programming/">programming</a>,
-            <a href="/categories/wu-tang/">wu tang</a>} 
-
-            
-    ::
-    #<a href="/tags/demo/">demo</a>
-        
-    #<a href="/tags/zola/">zola</a>
-        
-    #<a href="/tags/highlighting/">highlighting</a>
         
     
-            
+
         
-    </div>
-<div class="post-content">
-            a basic demo of zola.</div>
-        <div>
-            <a class="read-more button" href="&#x2F;demo&#x2F;">read more →</a>
-        </div>
-        </div>
-    </section>
-</div>
+        
+    </article></div>
     <div class="pagination">
         <div class="pagination__buttons">
-            
-                <span class="button next">
-                    <a href="&#x2F;page&#x2F;2&#x2F;">
-                        <span class="button__text">older</span>
-                        <span class="button__icon">→</span>
-                    </a>
-                </span>
             </div>
     </div>
 <footer class="footer">

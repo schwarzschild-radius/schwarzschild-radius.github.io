@@ -1,1 +1,0 @@
-This website is based on the theme [jekyll-theme-yat](https://github.com/jeffreytse/jekyll-theme-yat)

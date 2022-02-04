@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><title>My blog!</title>
+    <head>
+    <title>what is zerm? - you!</title>
+    
+    
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta name="description" content="placeholder description text for your blog!"/>
 
-    <meta property="og:title" content="My blog! -&nbsp;placeholder description text for your blog!" />
+    <meta property="og:title" content="My blog! -&nbsp;what is zerm?" />
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="&#x2F;"/>
-    <meta property="og:description" content="placeholder description text for your blog!"/>
+    <meta property="og:url" content="&#x2F;zerm&#x2F;"/>
+    <meta property="og:description" content="a summary of what zerm is and why it is different."/>
     <link rel="preload" href="/assets/fonts/FiraCode-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/assets/fonts/FiraCode-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
@@ -91,49 +94,12 @@
     </nav>
 
     </header>
-<div class="content">
-<section class="posts"><div class="post on-list">
-        <header>
-            <h1 class="post-title">
-                <a href="&#x2F;using-katex&#x2F;">Using KaTeX for mathematical typesetting</a>
-            </h1>
-        </header>
-        
-        
-        
-    <div class="post-meta">
-        <span class="post-date">2021.06.16
-                </span>
-
-        <span class="post-author"></span>
-
-        
-
-    
-    :: {<a href="/categories/test/">test</a>} 
-
-            
-    ::
-    #<a href="/tags/math/">math</a>
-        
-    #<a href="/tags/zola/">zola</a>
-        
-    
-            
-        
-    </div>
-<div class="post-content">
-            </div>
-        </div>
-    <div class="post on-list">
+<div class="content"><article class="post">
         <header>
             <h1 class="post-title">
                 <a href="&#x2F;zerm&#x2F;">what is zerm?</a>
             </h1>
-        </header>
-        
-        
-        
+            
     <div class="post-meta">
         <span class="post-date">2019.08.07
                 [Updated: 2021.02.03]
@@ -159,62 +125,70 @@
             
         
     </div>
-<div class="post-content">
-            a summary of what zerm is and why it is different.</div>
-        <div>
-            <a class="read-more button" href="&#x2F;zerm&#x2F;">read more →</a>
-        </div>
-        </div>
-    <div class="post on-list">
-        <header>
-            <h1 class="post-title">
-                <a href="&#x2F;demo&#x2F;">demo</a>
-            </h1>
-        </header>
-        
-        
-        
-    <div class="post-meta">
-        <span class="post-date">2019.08.06
-                </span>
 
-        <span class="post-author"></span>
-
-        
-
-    
-    :: {<a href="/categories/programming/">programming</a>,
-            <a href="/categories/wu-tang/">wu tang</a>} 
-
-            
-    ::
-    #<a href="/tags/demo/">demo</a>
-        
-    #<a href="/tags/zola/">zola</a>
-        
-    #<a href="/tags/highlighting/">highlighting</a>
-        
-    
-            
-        
-    </div>
-<div class="post-content">
-            a basic demo of zola.</div>
-        <div>
-            <a class="read-more button" href="&#x2F;demo&#x2F;">read more →</a>
-        </div>
-        </div>
-    </section>
+        </header><h1 id="hello">hello<a class="zola-anchor" href="#hello" aria-label="Anchor link for: hello">§</a>
+</h1>
+<p>This is zerm, a minimalist theme for Zola based<sup class="footnote-reference"><a href="#1">1</a></sup> off of <a href="https://twitter.com/panr">panr's</a>
+theme for Hugo.</p>
+<p>While it's largely faithful to the original, there are some changes:</p>
+<ul>
+<li>no prism.js integration, instead we use Zola's syntax highlighting to reduce overhead.</li>
+<li>removal of PostCSS and leveraging Zola's use of Sass for simple styling.
+<ul>
+<li>much thanks to <a href="https://github.com/pawroman/zola-theme-terminimal/">Paweł
+Romanowski's</a>
+independent fork of Terminal. Their Sass stylings saved me the overhead of
+figuring it out myself.</li>
+</ul>
+</li>
+<li>no preview images. I want a theme that is focused on content.</li>
+<li>support for anchor links.</li>
+<li>Other small, opinionated changes that I think lend to the minimalism and
+aesthetic of zerm.</li>
+</ul>
+<p>Things this theme does not have but either Terminal or Terminimal might:</p>
+<ul>
+<li>better short-codes for things like embedding videos or images, though I will
+work on this over time.</li>
+<li>better support for things like comments and social media. As of now, I have
+no plans to add this but <a href="https://github.com/ejmg/zerm/pulls">PR's are always
+<strong>welcomed</strong></a>.</li>
+</ul>
+<h2 id="a-quick-demo">A quick demo<a class="zola-anchor" href="#a-quick-demo" aria-label="Anchor link for: a-quick-demo">§</a>
+</h2>
+<p><code>println!(&quot;inline code&quot;);</code></p>
+<pre data-lang="rs" class="language-rs "><code class="language-rs" data-lang="rs">fn main(n: String) {
+    println!(&quot;hello, zola!&quot;);
+}
+</code></pre>
+<h3 id="header-iii">Header III<a class="zola-anchor" href="#header-iii" aria-label="Anchor link for: header-iii">§</a>
+</h3>
+<blockquote>
+<p>a somewhat kinda maybe large quote that maybe spans
+more than one line but I mean really who even cares
+okay maybe I do but point being is yes nice.</p>
+</blockquote>
+<h4 id="header-iv">Header IV<a class="zola-anchor" href="#header-iv" aria-label="Anchor link for: header-iv">§</a>
+</h4>
+<table><thead><tr><th align="center">hello</th><th align="center">tables</th><th>nice</th></tr></thead><tbody>
+<tr><td align="center">wow</td><td align="center">much love</td><td>yes</td></tr>
+</tbody></table>
+<p>Like zerm? Then <a href="https://www.getzola.org/documentation/getting-started/installation/">install
+Zola</a> and
+<a href="https://www.getzola.org/documentation/themes/installing-and-using-themes/#installing-a-theme">get started</a>!</p>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>fork? port? a little bit of the former, more of the latter?</p>
 </div>
+
+
+        
+    
+
+        
+        
+    </article></div>
     <div class="pagination">
         <div class="pagination__buttons">
-            
-                <span class="button next">
-                    <a href="&#x2F;page&#x2F;2&#x2F;">
-                        <span class="button__text">older</span>
-                        <span class="button__icon">→</span>
-                    </a>
-                </span>
             </div>
     </div>
 <footer class="footer">
