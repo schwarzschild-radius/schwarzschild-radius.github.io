@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Using KaTeX for mathematical typesetting - you!</title>
+    
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"><meta name="description" content="placeholder description text for your blog! Using KaTeX for mathematical typesetting "/><meta name="keywords" content="test, math, zola" />
+    <meta property="og:title" content="My blog! -&nbsp;Using KaTeX for mathematical typesetting" />
+    <meta property="og:type" content="website"/><meta property="og:url" content="https:&#x2F;&#x2F;schwarzschild-radius.github.io&#x2F;using-katex&#x2F;"/><meta property="og:description" content="placeholder description text for your blog!"/>
+    <link rel="preload" href="https://schwarzschild-radius.github.io/assets/fonts/FiraCode-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://schwarzschild-radius.github.io/assets/fonts/FiraCode-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://schwarzschild-radius.github.io/style.css?h=97e262212a0704163528">
+    <link rel="stylesheet" href=" https://schwarzschild-radius.github.io/color/orange.css?h=a5a5d7faf9d4bc3e0b18">
+    
+<link rel="alternate" type="application/atom+xml" title="My blog! RSS" href="https://schwarzschild-radius.github.io/atom.xml">
+  
+
+  <link rel="stylesheet" href="https://schwarzschild-radius.github.io/assets/katex/katex.min.css">
+
+  <script defer type="text/javascript" src="https://schwarzschild-radius.github.io/assets/katex/katex.min.js"></script>
+  <script defer type="text/javascript" src="https://schwarzschild-radius.github.io/assets/katex/mathtex-script-type.min.js"></script>
+
+  <script defer src="https://schwarzschild-radius.github.io/assets/katex/auto-render.min.js"
+    onload="renderMathInElement(document.body, {
+				delimiters: [
+					{left: '$$', right: '$$', display: true},
+					{left: '$', right: '$', display: false},
+					{left: '\\(', right: '\\)', display: false},
+					{left: '\\[', right: '\\]', display: true}
+				]
+			});"></script>
+
+
+  </head>
+    <body>
+        <div class="container center">
+<header class="header">
+    <div class="header__inner">
+        <div class="header__logo">
+            <a href="&#x2F;">
+    <div class="logo">
+        zerm
+    </div>
+</a>
+        </div>
+        <div class="menu-trigger">menu</div>
+    </div>
+    
+    <nav class="menu">
+        <ul class="menu__inner menu__inner--desktop">
+            
+            
+                    <li>
+                        <a href="
+    
+        https://schwarzschild-radius.github.io/about
+    
+">about</a>
+                    </li>
+                
+                    <li>
+                        <a href="
+    
+        https://schwarzschild-radius.github.io/contact
+    
+">contact</a>
+                    </li>
+                <ul class="menu__sub-inner">
+                        <li class="menu__sub-inner-more-trigger">show more ▾</li>
+                        <ul class="menu__sub-inner-more hidden">
+                            
+        <li>
+            <a href="
+    
+        https:&#x2F;&#x2F;google.com
+    
+">Google</a>
+        </li>
+                        </ul>
+                    </ul>
+            </ul>
+
+        <ul class="menu__inner menu__inner--mobile">
+            
+        <li>
+            <a href="
+    
+        https://schwarzschild-radius.github.io/about
+    
+">about</a>
+        </li>
+        <li>
+            <a href="
+    
+        https://schwarzschild-radius.github.io/contact
+    
+">contact</a>
+        </li>
+        <li>
+            <a href="
+    
+        https:&#x2F;&#x2F;google.com
+    
+">Google</a>
+        </li>
+        </ul>
+    </nav>
+
+    </header>
+<div class="content"><article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https:&#x2F;&#x2F;schwarzschild-radius.github.io&#x2F;using-katex&#x2F;">Using KaTeX for mathematical typesetting</a>
+            </h1>
+            
+    <div class="post-meta">
+        <span class="post-date">2021.06.16
+                </span>
+
+        <span class="post-author"></span>
+
+        
+
+    
+    :: {<a href="https://schwarzschild-radius.github.io/categories/test/">test</a>} 
+
+            
+    ::
+    #<a href="https://schwarzschild-radius.github.io/tags/math/">math</a>
+        
+    #<a href="https://schwarzschild-radius.github.io/tags/zola/">zola</a>
+        
+    
+            
+        
+    </div>
+
+            
+    
+
+
+<div class="toc" id="nav-container">
+	<p class="toc-head">Table of Contents</p>
+		<div id="nav-content" >
+		<ul>
+		
+			<li>
+				<a href="https://schwarzschild-radius.github.io/using-katex/#example-1">Example 1</a>
+				
+			</li>
+		
+			<li>
+				<a href="https://schwarzschild-radius.github.io/using-katex/#example-2">Example 2</a>
+				
+			</li>
+		
+			<li>
+				<a href="https://schwarzschild-radius.github.io/using-katex/#example-3">Example 3</a>
+				
+			</li>
+		
+		</ul>
+		</div>
+</div>
+
+</header><p>The usual way to include LaTeX is to use <code>$$</code>, as shown in the examples below.</p>
+<p>These examples are taken from <a href="http://khan.github.io/KaTeX/">http://khan.github.io/KaTeX/</a></p>
+<h3 id="example-1">Example 1<a class="zola-anchor" href="#example-1" aria-label="Anchor link for: example-1">§</a>
+</h3>
+<p>If the text between <code>$$</code> contains newlines it will rendered in display mode:</p>
+<pre><code>$$
+f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi
+$$
+</code></pre>
+<p>$$
+f(x) = \int_{-\infty}^\infty\hat f(\xi),e^{2 \pi i \xi x},d\xi
+$$</p>
+<h3 id="example-2">Example 2<a class="zola-anchor" href="#example-2" aria-label="Anchor link for: example-2">§</a>
+</h3>
+<pre><code>$$
+\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
+$$
+
+1(ϕ5−ϕ)e25π=1+e−2π1+e−4π1+e−6π1+e−8π1+⋯ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } } 
+</code></pre>
+<p>$$
+\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
+$$</p>
+<p>1(ϕ5−ϕ)e25π=1+e−2π1+e−4π1+e−6π1+e−8π1+⋯ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } } </p>
+<h3 id="example-3">Example 3<a class="zola-anchor" href="#example-3" aria-label="Anchor link for: example-3">§</a>
+</h3>
+<pre><code>$$
+1 +  \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots = \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}, \quad\quad \text{for }\lvert q\rvert&lt;1.
+$$
+</code></pre>
+<p>$$
+1 +  \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots = \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}, \quad\quad \text{for }\lvert q\rvert&lt;1.
+$$</p>
+
+
+        
+    
+
+        
+        
+    </article></div>
+    <div class="pagination">
+        <div class="pagination__buttons">
+            </div>
+    </div>
+<footer class="footer">
+                    <div class="footer__inner"><div class="copyright">
+            <span>© 2024 <a href="https://github.com/ejmg/zerm">zerm</a> :: Powered by <a href="https://www.getzola.org/">Zola</a></span>
+            <span>:: Theme made by <a href="https://github.com/ejmg">ejmg</a></span>
+        </div>
+    <script type="text/javascript" src="https://schwarzschild-radius.github.io/assets/js/main.js"></script>
+</div>
+                    
+
+                </footer></div>
+    </body>
+</html>

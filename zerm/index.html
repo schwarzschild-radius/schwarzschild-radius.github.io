@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>what is zerm? - you!</title>
+    
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"><meta name="description" content="placeholder description text for your blog! what is zerm? a summary of what zerm is and why it is different."/><meta name="keywords" content="programming, misc., rust, test, zola" />
+    <meta property="og:title" content="My blog! -&nbsp;what is zerm?" />
+    <meta property="og:type" content="website"/><meta property="og:url" content="https:&#x2F;&#x2F;schwarzschild-radius.github.io&#x2F;zerm&#x2F;"/><meta property="og:description" content="a summary of what zerm is and why it is different."/>
+    <link rel="preload" href="https://schwarzschild-radius.github.io/assets/fonts/FiraCode-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="https://schwarzschild-radius.github.io/assets/fonts/FiraCode-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://schwarzschild-radius.github.io/style.css?h=97e262212a0704163528">
+    <link rel="stylesheet" href=" https://schwarzschild-radius.github.io/color/orange.css?h=a5a5d7faf9d4bc3e0b18">
+    
+<link rel="alternate" type="application/atom+xml" title="My blog! RSS" href="https://schwarzschild-radius.github.io/atom.xml"></head>
+    <body>
+        <div class="container center">
+<header class="header">
+    <div class="header__inner">
+        <div class="header__logo">
+            <a href="&#x2F;">
+    <div class="logo">
+        zerm
+    </div>
+</a>
+        </div>
+        <div class="menu-trigger">menu</div>
+    </div>
+    
+    <nav class="menu">
+        <ul class="menu__inner menu__inner--desktop">
+            
+            
+                    <li>
+                        <a href="
+    
+        https://schwarzschild-radius.github.io/about
+    
+">about</a>
+                    </li>
+                
+                    <li>
+                        <a href="
+    
+        https://schwarzschild-radius.github.io/contact
+    
+">contact</a>
+                    </li>
+                <ul class="menu__sub-inner">
+                        <li class="menu__sub-inner-more-trigger">show more ▾</li>
+                        <ul class="menu__sub-inner-more hidden">
+                            
+        <li>
+            <a href="
+    
+        https:&#x2F;&#x2F;google.com
+    
+">Google</a>
+        </li>
+                        </ul>
+                    </ul>
+            </ul>
+
+        <ul class="menu__inner menu__inner--mobile">
+            
+        <li>
+            <a href="
+    
+        https://schwarzschild-radius.github.io/about
+    
+">about</a>
+        </li>
+        <li>
+            <a href="
+    
+        https://schwarzschild-radius.github.io/contact
+    
+">contact</a>
+        </li>
+        <li>
+            <a href="
+    
+        https:&#x2F;&#x2F;google.com
+    
+">Google</a>
+        </li>
+        </ul>
+    </nav>
+
+    </header>
+<div class="content"><article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="https:&#x2F;&#x2F;schwarzschild-radius.github.io&#x2F;zerm&#x2F;">what is zerm?</a>
+            </h1>
+            
+    <div class="post-meta">
+        <span class="post-date">2019.08.07
+                [Updated: 2021.02.03]
+                </span>
+
+        <span class="post-author"></span>
+
+        
+
+    
+    :: {<a href="https://schwarzschild-radius.github.io/categories/programming/">programming</a>,
+            <a href="https://schwarzschild-radius.github.io/categories/misc/">misc.</a>} 
+
+            
+    ::
+    #<a href="https://schwarzschild-radius.github.io/tags/rust/">rust</a>
+        
+    #<a href="https://schwarzschild-radius.github.io/tags/test/">test</a>
+        
+    #<a href="https://schwarzschild-radius.github.io/tags/zola/">zola</a>
+        
+    
+            
+        
+    </div>
+
+            
+    
+
+
+<div class="toc" id="nav-container">
+	<p class="toc-head">Table of Contents</p>
+		<div id="nav-content" >
+		<ul>
+		
+			<li>
+				<a href="https://schwarzschild-radius.github.io/zerm/#hello">hello</a>
+				
+					<ul>
+						
+							<li>
+								<a href="https://schwarzschild-radius.github.io/zerm/#a-quick-demo">A quick demo</a>
+							</li>
+							
+								<ul>
+								
+									<li>
+										<a href="https://schwarzschild-radius.github.io/zerm/#header-iii">Header III</a>
+										
+											<ul>
+												
+													<li>
+														<a href="https://schwarzschild-radius.github.io/zerm/#header-iv">Header IV</a>
+													</li>
+													
+												
+											</ul>
+										
+									</li>
+								
+								</ul>
+							
+						
+					</ul>
+				
+			</li>
+		
+		</ul>
+		</div>
+</div>
+
+</header><h1 id="hello">hello<a class="zola-anchor" href="#hello" aria-label="Anchor link for: hello">§</a>
+</h1>
+<p>This is zerm, a minimalist theme for Zola based<sup class="footnote-reference"><a href="#1">1</a></sup> off of <a href="https://twitter.com/panr">panr's</a>
+theme for Hugo.</p>
+<p>While it's largely faithful to the original, there are some changes:</p>
+<ul>
+<li>no prism.js integration, instead we use Zola's syntax highlighting to reduce overhead.</li>
+<li>removal of PostCSS and leveraging Zola's use of Sass for simple styling.
+<ul>
+<li>much thanks to <a href="https://github.com/pawroman/zola-theme-terminimal/">Paweł
+Romanowski's</a>
+independent fork of Terminal. Their Sass stylings saved me the overhead of
+figuring it out myself.</li>
+</ul>
+</li>
+<li>no preview images. I want a theme that is focused on content.</li>
+<li>support for anchor links.</li>
+<li>Other small, opinionated changes that I think lend to the minimalism and
+aesthetic of zerm.</li>
+</ul>
+<p>Things this theme does not have but either Terminal or Terminimal might:</p>
+<ul>
+<li>better short-codes for things like embedding videos or images, though I will
+work on this over time.</li>
+<li>better support for things like comments and social media. As of now, I have
+no plans to add this but <a href="https://github.com/ejmg/zerm/pulls">PR's are always
+<strong>welcomed</strong></a>.</li>
+</ul>
+<h2 id="a-quick-demo">A quick demo<a class="zola-anchor" href="#a-quick-demo" aria-label="Anchor link for: a-quick-demo">§</a>
+</h2>
+<p><code>println!(&quot;inline code&quot;);</code></p>
+<pre data-lang="rs" class="language-rs "><code class="language-rs" data-lang="rs">fn main(n: String) {
+    println!(&quot;hello, zola!&quot;);
+}
+</code></pre>
+<h3 id="header-iii">Header III<a class="zola-anchor" href="#header-iii" aria-label="Anchor link for: header-iii">§</a>
+</h3>
+<blockquote>
+<p>a somewhat kinda maybe large quote that maybe spans
+more than one line but I mean really who even cares
+okay maybe I do but point being is yes nice.</p>
+</blockquote>
+<h4 id="header-iv">Header IV<a class="zola-anchor" href="#header-iv" aria-label="Anchor link for: header-iv">§</a>
+</h4>
+<table><thead><tr><th style="text-align: center">hello</th><th style="text-align: center">tables</th><th>nice</th></tr></thead><tbody>
+<tr><td style="text-align: center">wow</td><td style="text-align: center">much love</td><td>yes</td></tr>
+</tbody></table>
+<p>Like zerm? Then <a href="https://www.getzola.org/documentation/getting-started/installation/">install
+Zola</a> and
+<a href="https://www.getzola.org/documentation/themes/installing-and-using-themes/#installing-a-theme">get started</a>!</p>
+<hr />
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>fork? port? a little bit of the former, more of the latter?</p>
+</div>
+
+
+        
+    
+
+        
+        
+    </article></div>
+    <div class="pagination">
+        <div class="pagination__buttons">
+            </div>
+    </div>
+<footer class="footer">
+                    <div class="footer__inner"><div class="copyright">
+            <span>© 2024 <a href="https://github.com/ejmg/zerm">zerm</a> :: Powered by <a href="https://www.getzola.org/">Zola</a></span>
+            <span>:: Theme made by <a href="https://github.com/ejmg">ejmg</a></span>
+        </div>
+    <script type="text/javascript" src="https://schwarzschild-radius.github.io/assets/js/main.js"></script>
+</div>
+                    
+
+                </footer></div>
+    </body>
+</html>
